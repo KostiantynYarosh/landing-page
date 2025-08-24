@@ -1,3 +1,7 @@
+
+
+
+
 html,body{height:100%}
 body{
 margin:0; background: #000000; color: #fff; font: 16px "JetBrains Mono", monospace;
@@ -11,6 +15,13 @@ font-weight: 400;
 .bg-gif{
 position:absolute; left:50%; top:40%; transform:translate(-50%,-50%);
 width: 420px; height:auto; z-index:1; pointer-events:none; opacity: 0.5;
+user-select: none;              
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+
+-webkit-user-drag: none;     
+-webkit-touch-callout: none; 
 }
 
 
@@ -107,8 +118,23 @@ opacity: 0.95;
     margin-bottom: -4px;
 }
 
+#card4 .line-skills img{
+    width: 500px;
+    height: 2px;
+    margin-top: 3px; 
+    margin-bottom: 3px;
+  }
+
+
 .eva {
     margin-top: -400px;
+    user-select: none;              
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    -webkit-user-drag: none;     
+    -webkit-touch-callout: none; 
 }
 
 .links {
@@ -119,6 +145,7 @@ opacity: 0.95;
     font-family: 'Jura', sans-serif;
     font-size: 19px;
     cursor: default;
+    
 }
 
 .links a{
@@ -141,3 +168,89 @@ opacity: 0.95;
     z-index:6; 
     position:absolute;
 }
+
+
+
+
+
+
+/* Mobile and tablet layout */
+@media (max-width: 1450px){
+  .content{
+  position: relative;
+  width: min(1100px, 100% - 32px);
+  height: auto;
+  margin: 56px auto 0;
+  padding-inline: 16px;
+}
+
+  .card{position:static; width:auto; margin:16px 0;}
+  #card1,#card2,#card3,#card4{margin:0}
+
+  .content .h{font-size:clamp(22px, 4vw, 32px)}
+  .content .xtext{font-size:clamp(16px, 2.8vw, 18px); line-height:1.45; margin-left:8px}
+  .content .muted{font-size:clamp(14px, 2.4vw, 16px); line-height:1.35; margin-left:30px}
+  .xitem img{width:18px; height:18px}
+
+  .title{position:relative; inset:auto; display:flex; justify-content:center; pointer-events:none; margin:12px 0}
+  .title svg{width:min(92vw, 640px); height:auto}
+
+  .bg-gif{top:22%; width:min(72vw, 360px); opacity:0}
+  .content-wrap{align-items:flex-start}
+
+  .links{position:static; margin:12px 16px 0; display:flex; gap:16px; font-size:18px}
+  .linkline{display:none}
+  .eva{margin-top: 100%;}
+}
+
+@media (max-width: 600px){
+    
+  .content{padding:0 12px; margin-top: 10px;}
+  #card1,#card2,#card3,#card4{width: 98%;}
+  .xitem img{width:16px; height:16px}
+  .bg-gif{opacity:0}
+  .links{font-size:16px; gap:12px; flex-wrap:wrap}
+}
+
+
+
+
+
+
+/* 4k UHD */
+@media (min-width: 3500px){
+  .content{
+    width: 2200px;
+
+    margin-top: -400px;
+  }
+
+  .content .h{font-size:90px}
+  .content .xtext{font-size:33px; line-height:45px}
+  .content .muted{font-size:27px; line-height:36px; margin-left: 40;}
+
+  .bg-gif{top: 50%; width:800px;}
+  .xitem img{width:40px; height:40px}
+  #card1{width:750px; margin-left:10px; margin-top:200px}
+  #card2{width:750px; margin-left:300px; margin-top:650px}
+  #card2 .xtext{width:600px}
+  #card3{width:1100px; margin-left:1420px; margin-top:100px}
+  #card4{width:1000px; margin-left:1510px; margin-top:480px}
+  #card4 .line-skills img{
+    width: 1000px;
+    height: auto;
+    margin-top: 6px; 
+    margin-bottom: 6px;
+  }
+
+  .links{margin-left:860px; margin-top:210px; font-size:36px; margin-top: 80px;}
+  .linkline{margin-left:854px; margin-top:126px; height: 5; width: 500px;}
+  .eva{
+    height: 800px;
+    width: auto;
+    margin-top: -800px;
+  }
+}
+
+
+
