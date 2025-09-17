@@ -8,6 +8,15 @@ margin:0; background: #000000; color: #fff; font: 16px "JetBrains Mono", monospa
 font-weight: 400;
 }
 
+img{
+    pointer-events:none;
+    user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;     
+    -webkit-touch-callout: none; 
+}
 
 .stage{position:relative; overflow:hidden;}
 
@@ -251,6 +260,7 @@ opacity: 0.95;
     margin-top: -800px;
   }
 }
+
 
 
 
