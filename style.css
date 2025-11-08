@@ -160,14 +160,14 @@ opacity: 0.95;
 .links a{
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: #ababab;
     display: inline-block;     
     transition: transform 0.2s;
 }
 
 .links a:hover {
   color: #fff;
-  transform: scale(1.06);    
+  transform: scale(1.02);    
 }
 
 
@@ -260,6 +260,7 @@ opacity: 0.95;
     margin-top: -800px;
   }
 }
+
 
 
 
