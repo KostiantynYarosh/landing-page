@@ -166,8 +166,8 @@ opacity: 0.95;
 }
 
 .links a:hover {
-  color: #5a99ff;
-  transform: scale(1.05);    
+  color: #fff;
+  transform: scale(1.06);    
 }
 
 
@@ -260,6 +260,7 @@ opacity: 0.95;
     margin-top: -800px;
   }
 }
+
 
 
 
