@@ -109,14 +109,14 @@ opacity: 0.95;
 
 #card3 {
     width: 600px;
-    margin-top: 170px;
-    margin-left: 910px;
+    margin-top: 160px;
+    margin-left: 930px;
 }
 
 #card4 {
     width: 600px;
-    margin-top: 350px;
-    margin-left: 950px;
+    margin-top: 420px;
+    margin-left: 940px;
 }
 
 #card4 .xitem{
@@ -160,14 +160,14 @@ opacity: 0.95;
 .links a{
     text-decoration: none;
     cursor: pointer;
-    color: #ababab;
+    color: #fff;
     display: inline-block;     
     transition: transform 0.2s;
 }
 
 .links a:hover {
-  color: #fff;
-  transform: scale(1.02);    
+  color: #5a99ff;
+  transform: scale(1.05);    
 }
 
 
@@ -243,8 +243,8 @@ opacity: 0.95;
   #card1{width:750px; margin-left:10px; margin-top:200px}
   #card2{width:750px; margin-left:300px; margin-top:650px}
   #card2 .xtext{width:600px}
-  #card3{width:1100px; margin-left:1420px; margin-top:100px}
-  #card4{width:1000px; margin-left:1510px; margin-top:480px}
+  #card3{width:1100px; margin-left:1460px; margin-top:80px}
+  #card4{width:1000px; margin-left:1445px; margin-top:580px}
   #card4 .line-skills img{
     width: 1000px;
     height: auto;
@@ -260,8 +260,6 @@ opacity: 0.95;
     margin-top: -800px;
   }
 }
-
-
 
 
 
